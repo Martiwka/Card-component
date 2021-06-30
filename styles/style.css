@@ -15,78 +15,51 @@
   --stat-headings: hsla(0, 0%, 100%, 0.6);
   font-size: 15px;
 }
-
 body {
   background-color: var(--main-background);
 }
-
 .main {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -200px 0 0 -550px;
-  height: 400px;
-  width: 1100px;
 }
-
 .card-background {
   background-color: var(--card-background);
-  float: left;
-  width: 50%;
-  height: 100%;
-  padding: 70px;
-  border-radius: 6px 0px 0px 6px;
 }
-
 .image {
-  float: right;
   background-image: url("/images/image-header-desktop.jpg");
-  background-position: center;
-  background-size: cover;
   background-color: var(--accent);
   background-blend-mode: multiply;
-  width: 50%;
-  height: 100%;
-  opacity: 0.7;
-  border-radius: 0px 6px 6px 0px;
 }
-
-.filter {
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  left: 50%;
-  background: hsl(277, 64%, 61%);
-  border-radius: 0px 8px 8px 0px;
-}
-
 .accent {
   color: var(--accent);
   font-family: "Inter", sans-serif;
 }
-
 h1 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   color: white;
-  padding-bottom: 20px;
 }
 
 p {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   color: var(--main-paragraph);
-  padding-bottom: 75px;
-  line-height: 23px;
-  font-size: 12px;
 }
-
+.span1 {
+  position: absolute;
+}
+.span2 {
+  position: absolute;
+}
+.span3 {
+  position: absolute;
+}
 .bold {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 20px;
   color: white;
-  padding-right: 80px;
 }
 
 .uppercase {
@@ -94,5 +67,259 @@ p {
   font-weight: 400;
   font-size: 10px;
   color: var(--stat-headings);
-  padding-right: 63.5px;
+}
+
+@media screen and (min-width: 1131px) {
+  .main {
+    margin: -200px 0 0 -550px;
+    height: 400px;
+    width: 1100px;
+  }
+
+  .card-background {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 70px;
+    border-radius: 6px 0px 0px 6px;
+  }
+
+  .image {
+    float: right;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    opacity: 0.7;
+    border-radius: 0px 6px 6px 0px;
+  }
+
+  h1 {
+    padding-bottom: 20px;
+  }
+
+  p {
+    padding-bottom: 75px;
+    line-height: 23px;
+    font-size: 15px;
+  }
+
+  .span2 {
+    left: 22%;
+  }
+  .span3 {
+    left: 36%;
+  }
+}
+
+@media screen and (min-width: 845px) and (max-width: 1130px) {
+  .main {
+    margin: -300px 0 0 -400px;
+    height: 600px;
+    width: 800px;
+  }
+
+  .card-background {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    border-radius: 0px 0px 6px 6px;
+    padding: 30px;
+  }
+  .image {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+
+    background-position: top;
+    background-size: cover;
+
+    opacity: 0.7;
+    border-radius: 6px 6px 0px 0px;
+  }
+
+  h1 {
+    padding-bottom: 20px;
+  }
+
+  p {
+    text-align: center;
+    padding-bottom: 60px;
+    line-height: 23px;
+    font-size: 15px;
+  }
+
+  .span1 {
+    left: 22%;
+  }
+  .span2 {
+    left: 46%;
+  }
+  .span3 {
+    left: 70%;
+  }
+}
+@media screen and (min-width: 535px) and (max-width: 844px) {
+  .main {
+    margin: -350px 0 0 -250px;
+    height: 700px;
+    width: 500px;
+  }
+
+  .card-background {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 40%;
+
+    border-radius: 0px 0px 6px 6px;
+    padding: 40px;
+  }
+  .image {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+
+    background-position: top;
+    background-size: cover;
+
+    opacity: 0.7;
+    border-radius: 6px 6px 0px 0px;
+  }
+
+  h1 {
+    text-align: center;
+
+    padding-bottom: 30px;
+  }
+
+  p {
+    text-align: center;
+    padding-bottom: 55px;
+    line-height: 23px;
+    font-size: 15px;
+  }
+
+  .span1 {
+    left: 20%;
+  }
+  .span2 {
+    left: 46%;
+  }
+  .span3 {
+    right: 20%;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 535px) {
+  .main {
+    margin: -350px 0 0 -200px;
+    height: 700px;
+    width: 400px;
+  }
+
+  .card-background {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 40%;
+
+    border-radius: 0px 0px 6px 6px;
+    padding: 40px;
+  }
+  .image {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+
+    background-position: top;
+    background-size: cover;
+
+    opacity: 0.7;
+    border-radius: 6px 6px 0px 0px;
+  }
+
+  h1 {
+    padding-bottom: 30px;
+  }
+
+  p {
+    text-align: center;
+    padding-bottom: 55px;
+    line-height: 23px;
+    font-size: 15px;
+  }
+
+  .span1 {
+    left: 15%;
+  }
+  .span2 {
+    left: 44%;
+  }
+  .span3 {
+    right: 15%;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    margin: -380px 0px 0px -165px;
+    height: 900px;
+    width: 330px;
+  }
+  .card-background {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 25%;
+    border-radius: 0px 0px 6px 6px;
+    padding: 30px;
+  }
+  .image {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+
+    background-position: center;
+    background-size: cover;
+
+    opacity: 0.7;
+    border-radius: 6px 6px 0px 0px;
+  }
+
+  h1 {
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    padding-bottom: 40px;
+    line-height: 23px;
+    font-size: 15px;
+  }
+  .span1 {
+    top: 50%;
+    left: 50%;
+    margin: 25px 0 0 -30.65px;
+  }
+  .span2 {
+    top: 50%;
+    left: 50%;
+    margin: 110px 0 0 -30.65px;
+  }
+  .span3 {
+    top: 50%;
+    left: 50%;
+    margin: 195px 0 0 -30.65px;
+  }
+
+  .bold {
+    padding: 0px;
+    text-align: center;
+  }
+  .uppercase {
+    top: 40px;
+    padding: 0px;
+    text-align: center;
+  }
 }
